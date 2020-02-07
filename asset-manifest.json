@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/kadai/static/js/main.d29178af.chunk.js",
+    "main.js.map": "/kadai/static/js/main.d29178af.chunk.js.map",
+    "runtime-main.js": "/kadai/static/js/runtime-main.028294b5.js",
+    "runtime-main.js.map": "/kadai/static/js/runtime-main.028294b5.js.map",
+    "static/js/2.6a6b2c6c.chunk.js": "/kadai/static/js/2.6a6b2c6c.chunk.js",
+    "static/js/2.6a6b2c6c.chunk.js.map": "/kadai/static/js/2.6a6b2c6c.chunk.js.map",
+    "index.html": "/kadai/index.html",
+    "precache-manifest.460fcf63d7e2e75b5b5e272251c41499.js": "/kadai/precache-manifest.460fcf63d7e2e75b5b5e272251c41499.js",
+    "service-worker.js": "/kadai/service-worker.js",
+    "static/js/2.6a6b2c6c.chunk.js.LICENSE.txt": "/kadai/static/js/2.6a6b2c6c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.028294b5.js",
+    "static/js/2.6a6b2c6c.chunk.js",
+    "static/js/main.d29178af.chunk.js"
+  ]
+}

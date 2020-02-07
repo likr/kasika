@@ -8,7 +8,7 @@ import DeckGL from '@deck.gl/react';
 
 
 // Set your mapbox token here
-const MAPBOX_TOKEN = process.env.MapboxAccessToken; // eslint-disable-line
+const MAPBOX_TOKEN = 'pk.eyJ1IjoieS1saWtyIiwiYSI6ImNpZzlhemtjbjBkYmN0YWx0YTZjODVlZm4ifQ.z49ZPJ8RYCLWc9q-ybKBMQ'; // eslint-disable-line
 
 // Source data CSV
 const DATA_URL = 'data.csv'
@@ -229,13 +229,9 @@ export default class App extends Component {
   }
 }
 
-export function renderToDOM(container) {
-  render(<App />, container);
-
-  require('d3-request').csv(DATA_URL, (error, response) => {
-    if (!error) {
-      const data = response.map(d => [Number(d.lng), Number(d.lat)]);
-      render(<App data={data} />, container);
-    }
-  });
-}
+require('d3-request').csv(DATA_URL, (error, response) => {
+  if (!error) {
+    const data = response.map(d => [Number(d.lng), Number(d.lat)]);
+    render(<App data={data} />, document.getElementById('app'));
+  }
+});
